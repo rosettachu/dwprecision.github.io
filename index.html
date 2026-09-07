@@ -253,10 +253,27 @@
       <!-- Panel: 화장품 장식품 -->
       <div class="tab-panel" data-panel="cosmetic">
         <div class="grid md:grid-cols-2 gap-12 items-center bg-gray-50 rounded-2xl p-8 lg:p-14">
-          <div class="aspect-square rounded-xl bg-gradient-to-br from-navy-800 to-navy-950 flex items-center justify-center">
-            <svg class="w-28 h-28 text-blue-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5m4.75-11.396c.251.023.501.05.75.082m0 0a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/>
-            </svg>
+          <div class="product-carousel relative aspect-square rounded-xl overflow-hidden bg-white border border-gray-200">
+            <div class="carousel-track flex h-full transition-transform duration-500 ease-out">
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="cosmetic-1.png" class="w-full h-full object-contain" alt="화장품 패키지 장식 1"></div>
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="cosmetic-2.png" class="w-full h-full object-contain" alt="화장품 패키지 장식 2"></div>
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="cosmetic-3.png" class="w-full h-full object-contain" alt="화장품 패키지 장식 3"></div>
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="cosmetic-4.png" class="w-full h-full object-contain" alt="화장품 패키지 장식 4"></div>
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="cosmetic-5.png" class="w-full h-full object-contain" alt="화장품 패키지 장식 5"></div>
+            </div>
+            <button type="button" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white hover:bg-gray-100 border border-gray-200 flex items-center justify-center shadow transition-colors" aria-label="이전 사진">
+              <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button type="button" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white hover:bg-gray-100 border border-gray-200 flex items-center justify-center shadow transition-colors" aria-label="다음 사진">
+              <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+            <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-100 transition-opacity" aria-label="1번 사진으로 이동"></button>
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-30 transition-opacity" aria-label="2번 사진으로 이동"></button>
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-30 transition-opacity" aria-label="3번 사진으로 이동"></button>
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-30 transition-opacity" aria-label="4번 사진으로 이동"></button>
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-30 transition-opacity" aria-label="5번 사진으로 이동"></button>
+            </div>
           </div>
           <div>
             <span class="inline-block bg-navy-100 text-navy-800 text-sm font-bold px-3 py-1 rounded-full mb-4">Cosmetic Package</span>
@@ -373,7 +390,7 @@
         <div class="w-11 h-11 rounded-lg bg-navy-900 flex items-center justify-center mb-5">
           <svg class="w-5 h-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
         </div>
-        <h3 class="font-bold text-navy-900 text-lg">25T 다이캐스팅 머신</h3>
+        <h3 class="font-bold text-navy-900 text-lg">CX-25T (다이캐스팅 머신)</h3>
         <dl class="mt-4 space-y-2 text-sm text-gray-500">
           <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">규격</dt><dd>25TON</dd></div>
           <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">수량</dt><dd>3대</dd></div>
@@ -555,6 +572,56 @@
     });
   }, { threshold: 0.15 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Product image carousels
+  document.querySelectorAll('.product-carousel').forEach((carousel) => {
+    const track = carousel.querySelector('.carousel-track');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    const total = slides.length;
+    let index = 0;
+
+    function update() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('opacity-100', i === index);
+        dot.classList.toggle('opacity-30', i !== index);
+      });
+    }
+
+    carousel.querySelector('.carousel-prev').addEventListener('click', () => {
+      index = (index - 1 + total) % total;
+      update();
+    });
+    carousel.querySelector('.carousel-next').addEventListener('click', () => {
+      index = (index + 1) % total;
+      update();
+    });
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        index = i;
+        update();
+      });
+    });
+
+    // Touch swipe support (mobile)
+    let startX = 0;
+    carousel.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+    carousel.addEventListener('touchend', (e) => {
+      const diff = e.changedTouches[0].clientX - startX;
+      if (diff > 40) {
+        index = (index - 1 + total) % total;
+        update();
+      } else if (diff < -40) {
+        index = (index + 1) % total;
+        update();
+      }
+    });
+
+    update();
+  });
 
   // Contact form validation
   const form = document.getElementById('contactForm');

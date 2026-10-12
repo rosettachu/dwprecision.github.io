@@ -51,11 +51,6 @@
   .timeline-line { background: linear-gradient(to bottom, #1c4570, #28568a); }
   .tab-btn.active { background-color: #0f2947; color: white; }
   .tab-btn:not(.active) { background-color: transparent; color: #0f2947; }
-  .lang-btn.active { background-color: #0f2947; color: white; }
-  .lang-btn:not(.active) { color: #0f2947; }
-  html[lang="en"] .ko-br { display: none; }
-  html[lang="en"] #navbar .logo-sub { color: #0f2947; font-weight: 700; }
-  @media (max-width: 639px) { html[lang="ko"] #navbar .logo-sub { display: none; } }
 </style>
 </head>
 <body class="bg-white text-gray-800 antialiased">
@@ -69,7 +64,7 @@
      
           <img src="dw.png" style="width: 35px; height: auto;">
       
-        <span class="text-base sm:text-xl font-bold text-navy-900 tracking-tight">대원정밀공업&nbsp;<span class="logo-sub text-gray-400 font-light">Daewon Precision</span></span>
+        <span class="text-xl font-bold text-navy-900 tracking-tight">대원정밀공업&nbsp;<span class="text-gray-400 font-light">Daewon Precision</span></span>
       </a>
 
       <!-- Desktop Menu -->
@@ -80,18 +75,16 @@
         <a href="#contact" class="hover:text-navy-900 transition-colors">고객문의</a>
       </nav>
 
-      <!-- Language toggle (KO / EN) + Mobile Toggle -->
-      <div class="flex items-center gap-3">
-        <div id="langToggle" class="flex items-center rounded-full border border-navy-900 overflow-hidden text-xs sm:text-sm font-semibold" role="group" aria-label="Language">
-          <button type="button" data-lang="ko" class="lang-btn px-3 py-1.5 transition-colors" aria-pressed="true">KO</button>
-          <button type="button" data-lang="en" class="lang-btn px-3 py-1.5 transition-colors" aria-pressed="false">EN</button>
-        </div>
+      <a href="#contact" class="hidden md:inline-block bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold px-5 py-2.5 rounded transition-colors">
+        문의하기
+      </a>
+
+      <!-- Mobile Toggle -->
       <button id="menuBtn" class="md:hidden text-navy-900">
         <svg xmlns="dw.png" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
-      </div>
     </div>
   </div>
 
@@ -174,9 +167,9 @@
           원하시는 제품을 합리적인 가격과<br>안정적인 품질로 실현합니다
         </h2>
         <p class="mt-6 text-gray-600 leading-relaxed">
-        오랜기간 축적해온 제조경험과 생산 노하우를 바탕으로 다양한 고객의 요구에 맞춰<br class="ko-br">
-        제품을 생산하고 있습니다. 합리적인 생산단가와 유연한 생산 대응으로<br class="ko-br">
-        고객의 생산 부담을 낮추는 동시에,체계적인 품질관리와 신뢰성 테스트를 통해<br class="ko-br">
+        오랜기간 축적해온 제조경험과 생산 노하우를 바탕으로 다양한 고객의 요구에 맞춰<br>
+        제품을 생산하고 있습니다. 합리적인 생산단가와 유연한 생산 대응으로<br>
+        고객의 생산 부담을 낮추는 동시에,체계적인 품질관리와 신뢰성 테스트를 통해<br>
         안정적인 제품품질을 확보합니다.
         </p>
         <div class="mt-10 grid sm:grid-cols-2 gap-6">
@@ -581,165 +574,6 @@
     <p class="text-gray-400 text-xs text-center">&copy; 2026 DAEWON PRECISION Co., Ltd. All rights reserved.</p>
   </div>
 </footer>
-
-<script>
-  // ===== KO / EN language switch =====
-  // 한국어 원문 -> 영어 번역 대응표(사전). 화면의 한국어 글자를 이 표에서 찾아 영어로 바꿔 끼웁니다.
-  (function () {
-    const EN = {
-    "회사소개": "About Us",
-    "제품소개": "Products",
-    "설비현황": "Facilities",
-    "고객문의": "Contact",
-    "대원정밀공업": "",
-    "신뢰로 쌓아온 기술": "Technology Built on Trust",
-    "정밀함으로 증명합니다": "Proven Through Precision",
-    "1999년부터 이어온 아연 다이캐스팅 기술력.": "Zinc die-casting expertise since 1999.",
-    "정직한 공정, 철저한 품질관리로 신뢰를 증명합니다.": "Honest processes and thorough quality control prove our reliability.",
-    "제품 살펴보기": "View Products",
-    "문의하기": "Contact Us",
-    "업력(년)": "Years in business",
-    "양품률": "Yield rate",
-    "파트너사": "Partners",
-    "ISO 9001 인증 · 아연 다이캐스팅": "ISO 9001 Certified · Zinc Die-Casting",
-    "도어록 부품, 화장품 액세서리, 전자부품의 제조": "Manufacturing of door lock parts, cosmetic accessories, and electronic components",
-    "원하시는 제품을 합리적인 가격과": "We deliver the products you want",
-    "안정적인 품질로 실현합니다": "at reasonable prices with stable quality",
-    "오랜기간 축적해온 제조경험과 생산 노하우를 바탕으로 다양한 고객의 요구에 맞춰": "Based on our long-accumulated manufacturing experience and production know-how, we produce",
-    "제품을 생산하고 있습니다. 합리적인 생산단가와 유연한 생산 대응으로": "products tailored to the needs of a wide range of customers. With reasonable unit costs and flexible production response,",
-    "고객의 생산 부담을 낮추는 동시에,체계적인 품질관리와 신뢰성 테스트를 통해": "we reduce our customers' production burden while, through systematic quality control and reliability testing,",
-    "안정적인 제품품질을 확보합니다.": "securing stable product quality.",
-    "고객 맞춤형 생산": "Customized Production",
-    "금형 제작부터 후처리까지 폭넓은 생산대응": "Broad production support from mold making to post-processing",
-    "검증된 제조 시스템": "Proven Manufacturing System",
-    "지속적인 생산과 안정적인 파트너십": "Continuous production and stable partnerships",
-    "합리적인 생산단가": "Reasonable Unit Costs",
-    "효율적인 생산을 통한 경쟁력 있는 단가": "Competitive pricing through efficient production",
-    "품질관리 역량": "Quality Control Capability",
-    "품질검증 및 신뢰성 테스트를 통한 안정적인 품질관리": "Stable quality control through quality verification and reliability testing",
-    "제품 포트폴리오": "Product Portfolio",
-    "정밀 가공 기술을 기반으로 다양한 산업군에 최적화된 제품을 제공합니다.": "Based on precision machining technology, we provide products optimized for a wide range of industries.",
-    "하기 제품은 고객사 사양에 맞춰 생산한 사례로 당사의 제조 기술과 생산 역량을 보여드립니다.": "The products below are examples made to customer specifications, showcasing our manufacturing technology and production capabilities.",
-    "자체 개발 제품": "In-house Developed Products",
-    "화장품 패키지 장식": "Cosmetic Package Decorations",
-    "버튼 베젤(엘리베이터)": "Button Bezels (Elevator)",
-    "전자제품 및 산업용 부품": "Electronics & Industrial Components",
-    "아연합금(ZAMAK) 다이캐스팅 기술을 바탕으로 자체 기획·개발한 제품입니다.": "Products independently planned and developed based on zinc alloy (ZAMAK) die-casting technology.",
-    "화장품 패키지 부품으로 활용 가능한 프리몰드 마사저 및 스패출라 제품 개발": "Development of pre-mold massagers and spatulas usable as cosmetic package components",
-    "고객이 원하는 디자인에 맞춘 주문 제작 가능": "Custom production to the customer's desired design available",
-    "정교한 디테일과 세련된 금속 질감으로 프리미엄 화장품의 완성도를 높여": "With refined detail and a sleek metal texture, we elevate the quality of premium cosmetics",
-    "차별화된 제품 경험을 제공합니다.": "and deliver a differentiated product experience.",
-    "주요 고객사 : LG생활건강, 톨리코리아 등": "Key customers: LG Household & Health Care, Tolly Korea, etc.",
-    "패키지 부속품부터 소형 제품까지": "From package accessories to small products",
-    "고급스러운 디자인 구현": "Luxurious design realization",
-    "세밀한 형태와 안정적인 중량감": "Fine forms and a stable, substantial weight",
-    "도금으로 마감하여 다채로운 컬러와 질감 완성": "Plating finish creates a variety of colors and textures",
-    "금속 베젤로 엘리베이터 버튼에 안정적인 조립성과 세련된 완성도를 더합니다.": "Metal bezels add stable assembly and a refined finish to elevator buttons.",
-    "주요 고객사 : ELS(OTIS) 등": "Key customers: ELS (OTIS), etc.",
-    "고객 사양에 맞춘 형상 및 정밀 치수 대응": "Shapes and precise dimensions to customer specifications",
-    "다양한 컬러와 금속 질감 구현": "A variety of colors and metallic textures",
-    "정밀한 치수 관리와 안정적인 품질을 바탕으로 도어락 등 전자제품부터 다양한 산업 분야의 금속 부품까지 고객 사양에 맞춰 제작합니다.": "Based on precise dimensional control and stable quality, we manufacture everything from electronics such as door locks to metal parts for various industries, to customer specifications.",
-    "주요 고객사 : 솔리티, 코맥스, 삼우전자정밀 등": "Key customers: Soliti, Commax, Samwoo Electronic Precision, etc.",
-    "고객 요구 치수에 부합하는 정밀하고 안정적인 품질": "Precise and stable quality that meets the customer's required dimensions",
-    "샤프트·부싱·케이블 커버·악기 부품 등 폭넓은 부품 대응": "A wide range of parts such as shafts, bushings, cable covers, and musical instrument components",
-    "주요 설비": "Key Equipment",
-    "정밀하고 안정적인 생산을 뒷받침하는 다이캐스팅 설비를 소개합니다.": "Introducing the die-casting equipment that supports precise and stable production.",
-    "U2 PLUS (다이캐스팅 머신)": "U2 PLUS (Die-Casting Machine)",
-    "CX-15T (다이캐스팅 머신)": "CX-15T (Die-Casting Machine)",
-    "CX-25T (다이캐스팅 머신)": "CX-25T (Die-Casting Machine)",
-    "60T 다이캐스팅 머신": "60T Die-Casting Machine",
-    "규격": "Spec",
-    "수량": "Qty",
-    "제조사": "Maker",
-    "8대": "8 units",
-    "2대": "2 units",
-    "3대": "3 units",
-    "1대": "1 unit",
-    "히시누마 머시너리": "Hishinuma Machinery",
-    "히시누마, 신영산업": "Hishinuma, Shinyoung Industrial",
-    "기타 설비 현황": "Other Equipment",
-    "생산을 지원하는 보조 설비입니다.": "Auxiliary equipment that supports production.",
-    "방전 가공기": "EDM (Electrical Discharge) Machine",
-    "평면 연삭기": "Surface Grinder",
-    "밀링 머신": "Milling Machine",
-    "드릴링 머신": "Drilling Machine",
-    "쇼트 머신": "Shot Blasting Machine",
-    "염수 분무 시험기": "Salt Spray Tester",
-    "레이저 각인기": "Laser Marking Machine",
-    "삼성정밀기계": "Samsung Precision Machinery",
-    "서울에스티": "Seoul ST",
-    "그린사이언스": "Green Science",
-    "타우레이저": "Tau Laser",
-    "제품문의": "Product Inquiries",
-    "제품 및 견적문의는 이메일 또는 연락처로 연락주세요.": "For product and quotation inquiries, please contact us by email or phone.",
-    "주소": "Address",
-    "경기도 김포시 감정로33번길 44 대원정밀공업": "Daewon Precision, 44 Gamjeong-ro 33beon-gil, Gimpo-si, Gyeonggi-do, Korea",
-    "전화번호 · FAX": "Phone · FAX",
-    "이메일": "Email",
-    "운영시간": "Business Hours",
-    "평일 09:00 – 17:00 (주말/공휴일 휴무)": "Weekdays 09:00 – 17:00 (Closed on weekends and public holidays)",
-    "이전 사진": "Previous photo",
-    "다음 사진": "Next photo",
-    "1번 사진으로 이동": "Go to photo 1",
-    "화장품 패키지 장식 1": "Cosmetic package decoration 1",
-    "2번 사진으로 이동": "Go to photo 2",
-    "화장품 패키지 장식 2": "Cosmetic package decoration 2",
-    "3번 사진으로 이동": "Go to photo 3",
-    "화장품 패키지 장식 3": "Cosmetic package decoration 3",
-    "4번 사진으로 이동": "Go to photo 4",
-    "화장품 패키지 장식 4": "Cosmetic package decoration 4",
-    "5번 사진으로 이동": "Go to photo 5",
-    "화장품 패키지 장식 5": "Cosmetic package decoration 5",
-    "자체 개발 제품 1": "In-house product 1",
-    "자체 개발 제품 2": "In-house product 2"
-};
-
-    const has = (k) => Object.prototype.hasOwnProperty.call(EN, k);
-    const textItems = [];
-    const attrItems = [];
-
-    // Collect Korean text on the page
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
-      acceptNode(n) {
-        const tag = n.parentNode.nodeName;
-        if (tag === 'SCRIPT' || tag === 'STYLE') return NodeFilter.FILTER_REJECT;
-        return /[가-힣]/.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
-      }
-    });
-    let node;
-    while ((node = walker.nextNode())) {
-      const ko = node.nodeValue;
-      const key = ko.trim();
-      if (has(key)) textItems.push({ node, ko, en: ko.replace(key, () => EN[key]) });
-    }
-    document.querySelectorAll('[alt],[aria-label]').forEach((el) => {
-      ['alt', 'aria-label'].forEach((attr) => {
-        const v = el.getAttribute(attr);
-        if (v && has(v.trim())) attrItems.push({ el, attr, ko: v, en: EN[v.trim()] });
-      });
-    });
-
-    const langBtns = document.querySelectorAll('.lang-btn');
-    function applyLang(lang) {
-      const en = lang === 'en';
-      document.documentElement.lang = en ? 'en' : 'ko';
-      textItems.forEach((i) => { i.node.nodeValue = en ? i.en : i.ko; });
-      attrItems.forEach((i) => i.el.setAttribute(i.attr, en ? i.en : i.ko));
-      langBtns.forEach((b) => {
-        const on = b.dataset.lang === (en ? 'en' : 'ko');
-        b.classList.toggle('active', on);
-        b.setAttribute('aria-pressed', on ? 'true' : 'false');
-      });
-      try { localStorage.setItem('lang', en ? 'en' : 'ko'); } catch (e) {}
-    }
-
-    langBtns.forEach((b) => b.addEventListener('click', () => applyLang(b.dataset.lang)));
-
-    let saved = 'ko';
-    try { saved = localStorage.getItem('lang') || 'ko'; } catch (e) {}
-    applyLang(saved === 'en' ? 'en' : 'ko');
-  })();
-</script>
 
 <script>
   // Mobile menu toggle

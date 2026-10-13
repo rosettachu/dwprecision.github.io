@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daewon Precision</title>
+
+<!-- Open Graph / 카카오톡, 페이스북 등 공유 미리보기 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Daewon Precision">
+<meta property="og:description" content="Zinc die-casting precision parts manufacturing and production">
+<meta property="og:image" content="https://rosettachu.github.io/dwprecision.github.io/og-image.jpg">
+<meta property="og:url" content="https://rosettachu.github.io/dwprecision.github.io/en.html">
+<meta property="og:locale" content="en_US">
+
+<!-- 트위터(X) 카드 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Daewon Precision">
+<meta name="twitter:description" content="Zinc die-casting precision parts manufacturing and production">
+<meta name="twitter:image" content="https://rosettachu.github.io/dwprecision.github.io/og-image.jpg">
+
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: {
+            950: '#0a1a2f',
+            900: '#0f2947',
+            800: '#14355c',
+            700: '#1c4570',
+            600: '#28568a',
+          }
+        },
+        fontFamily: {
+          sans: ['"Noto Sans KR"', '"Pretendard"', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Noto Sans KR', sans-serif; }
+  html { scroll-behavior: smooth; }
+  .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-up.show { opacity: 1; transform: translateY(0); }
+  .timeline-line { background: linear-gradient(to bottom, #1c4570, #28568a); }
+  .tab-btn.active { background-color: #0f2947; color: white; }
+  .tab-btn:not(.active) { background-color: transparent; color: #0f2947; }
+  .lang-btn.active { background-color: #0f2947; color: white; }
+  .lang-btn:not(.active) { color: #0f2947; }
+  html[lang="en"] .ko-br { display: none; }
+  html[lang="en"] #navbar .logo-sub { color: #0f2947; font-weight: 700; }
+  @media (max-width: 639px) { html[lang="ko"] #navbar .logo-sub { display: none; } }
+</style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+<!-- ===== NAVIGATION ===== -->
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="#top" class="flex items-center gap-2">
+     
+          <img src="dw.png" style="width: 35px; height: auto;">
+      
+        <span class="text-lg sm:text-xl font-bold text-navy-900 tracking-tight"><span class="logo-sub text-gray-400 font-light">DAEWON PRECISION</span></span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-10 text-base font-medium text-gray-700">
+        <a href="#about" class="hover:text-navy-900 transition-colors">About Us</a>
+        <a href="#products" class="hover:text-navy-900 transition-colors">Products</a>
+        <a href="#facilities" class="hover:text-navy-900 transition-colors">Facilities</a>
+        <a href="#contact" class="hover:text-navy-900 transition-colors">Contact Us</a>
+      </nav>
+
+      <!-- Language links (KO / EN) + Mobile Toggle -->
+      <div class="flex items-center gap-3">
+        <div id="langToggle" class="flex items-center rounded-full border border-navy-900 overflow-hidden text-xs sm:text-sm font-semibold" role="group" aria-label="Language">
+          <a href="index.html" class="lang-btn px-3 py-1.5 transition-colors" hreflang="ko" lang="ko">KO</a>
+          <a href="en.html" class="lang-btn px-3 py-1.5 transition-colors active" hreflang="en" lang="en">EN</a>
+        </div>
+      <button id="menuBtn" class="md:hidden text-navy-900">
+        <svg xmlns="dw.png" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100">
+    <nav class="flex flex-col px-6 py-4 gap-4 text-sm font-medium text-gray-700">
+      <a href="#about" class="mobile-link">About Us</a>
+      <a href="#products" class="mobile-link">Products</a>
+      <a href="#facilities" class="mobile-link">Facilities</a>
+      <a href="#contact" class="mobile-link">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section id="top" class="relative pt-20 min-h-screen flex items-center bg-navy-950 overflow-hidden">
+  <!-- Decorative grid -->
+  <div class="absolute inset-0 opacity-[0.07]" style="background-image: linear-gradient(#ffffff 1px, transparent 1px), linear-gradient(90deg, #ffffff 1px, transparent 1px); background-size: 48px 48px;"></div>
+  <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-navy-700/40 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-navy-600/20 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 py-24 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <span class="inline-block text-gray-200 bg-navy-800/60 border border-navy-700 text-xs font-semibold tracking-widest px-4 py-1.5 rounded-full mb-6">
+        BUILT ON TRUST AND EXPERIENCE
+      </span>
+      <h1 class="text-3xl sm:text-4xl lg:text-4xl xl:text-4xl font-black text-white leading-[1.3] tracking-normal">
+        DAEWON PRECISION<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-white">ZINC·ZAMAK DIECASTING MANUFACTURER</span>
+      </h1>
+      <p class="mt-6 text-gray-300 text-lg leading-relaxed max-w-lg">
+        Zinc die-casting expertise since 1999.
+      <br>We provide high-quality diecast products for various industries, from small components to plated exterior parts.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="#products" class="bg-white text-navy-900 font-bold px-7 py-3.5 rounded hover:bg-gray-100 transition-colors shadow-lg">View Products</a>
+        <a href="#contact" class="border border-gray-500 text-white font-semibold px-7 py-3.5 rounded hover:bg-white/10 transition-colors">Contact Us</a>
+      </div>
+
+      <div class="mt-8 grid grid-cols-3 gap-8 max-w-md border-t border-navy-800 pt-8">
+        <div>
+          <p class="text-3xl font-black text-white">25+</p>
+          <p class="text-gray-400 text-sm mt-1">Years in business</p>
+        </div>
+        <div>
+          <p class="text-3xl font-black text-white">100+</p>
+          <p class="text-gray-400 text-sm mt-1">partnerships</p>
+        </div>
+        <div>
+          <p class="text-2xl font-black text-white">ONE-STOP</p>
+          <p class="text-gray-400 text-sm mt-1">Manufacturing System</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero visual area -->
+    <div class="fade-up relative">
+      <div class="relative aspect-[4/5] rounded-2xl bg-gradient-to-br from-navy-800 to-navy-950 border border-gray-700 shadow-2xl overflow-hidden flex items-center justify-center">
+       <img
+          src="pexels-andromeda99-36922169.jpg"
+          class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-950/85 via-navy-950/10 to-navy-950/20"></div>
+
+        <div class="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4">
+          <p class="text-white text-sm font-semibold">ISO 9001 Certified · Zinc Die-Casting</p>
+          <p class="text-gray-300 text-xs mt-2">ELECTRONIC, COSMETIC PACKAGING COMPONENTS, <br class="sm:hidden">AND MORE</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="py-24 lg:py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="fade-up">
+        <span class="text-navy-700 font-bold text-sm tracking-widest">ABOUT US</span>
+          <h2 class="text-2xl font-black text-navy-900 mt-3 leading-normal">
+           Bring Your Product Ideas to Life <br class="sm:hidden">with Stable Quality and <br class="sm:hidden">Competitive Pricing
+          </h2>
+        <p class="mt-6 text-gray-600 leading-[1.8]">
+          With decades of manufacturing experience, <br>
+          we deliver products tailored to a wide range of <br class="sm:hidden">customer needs.<br class="hidden sm:block">
+          We offer competitive pricing and <br class="sm:hidden">flexible production options,<br class="hidden sm:block">
+          backed by <br class="sm:hidden">systematic quality control and reliability testing <br>
+          to ensure consistent product quality.
+
+        <!--  
+        Based on our long-accumulated manufacturing experience, <br class="sm:hidden">
+        we produce products tailored to the needs of a wide range of customers.<br class="sm:hidden">
+        With reasonable unit costs and flexible production response,<br class="sm:hidden">
+        we reduce our customers' production burden while, through systematic quality control and reliability testing,<br class="sm:hidden">
+        securing stable product quality.-->
+        
+        </p>
+        <div class="mt-10 grid sm:grid-cols-2 gap-6">
+          <div class="flex items-center gap-4">
+            <div class="shrink-0 w-11 h-11 rounded-lg bg-navy-900 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1a4 4 0 100-8 4 4 0 000 8z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-navy-900">Customized Production</h3>
+              <p class="text-sm text-gray-500 mt-1">Broad production support from mold making to post-processing</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="shrink-0 w-11 h-11 rounded-lg bg-navy-900 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-navy-900">Proven Manufacturing System</h3>
+              <p class="text-sm text-gray-500 mt-1">Continuous production and stable partnerships</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="shrink-0 w-11 h-11 rounded-lg bg-navy-900 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-navy-900">Reasonable Unit Costs</h3>
+              <p class="text-sm text-gray-500 mt-1">Competitive pricing through efficient production</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="shrink-0 w-11 h-11 rounded-lg bg-navy-900 flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-navy-900">Quality Control Capability</h3>
+              <p class="text-sm text-gray-500 mt-1">Stable quality control through quality verification and reliability testing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up grid grid-cols-2 gap-5">
+        <div class="rounded-xl overflow-hidden aspect-square bg-gradient-to-br from-navy-800 to-navy-900 flex items-center justify-center mt-8">
+         <img src="factory.jpg" class="w-full h-full object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden aspect-square bg-gray-100 border border-gray-200 flex items-center justify-center">
+         <img src="products.jpg" class="w-full h-full object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden aspect-square bg-gray-100 border border-gray-200 flex items-center justify-center">
+          <img src="machine.jpg" class="w-full h-full object-cover">
+        </div>
+        <div class="rounded-xl overflow-hidden aspect-square bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center -mt-8">
+          <img src="quality.jpg" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== PRODUCTS ===== -->
+<section id="products" class="py-24 lg:py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center fade-up">
+      <span class="text-navy-700 font-bold text-sm tracking-widest">PRODUCTS</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mt-3">Product Portfolio</h2>
+      <p class="text-gray-500 mt-4">Based on precision machining technology, we provide products optimized for a wide range of industries.</p>
+      <p class="text-gray-500 mt-1">The products below are examples made to customer specifications, showcasing our manufacturing technology and production capabilities.
+      </p>
+
+    </div>
+
+    <!-- Tabs -->
+    <div class="fade-up mt-14 flex flex-wrap justify-center gap-3">
+      <button data-tab="inhouse" class="tab-btn active border border-navy-900 font-semibold px-6 py-2.5 rounded-full text-sm transition-colors">In-house Developed Products</button>
+      <button data-tab="cosmetic" class="tab-btn border border-navy-900 font-semibold px-6 py-2.5 rounded-full text-sm transition-colors">Cosmetic Package Decorations</button>
+      <button data-tab="elevator" class="tab-btn border border-navy-900 font-semibold px-6 py-2.5 rounded-full text-sm transition-colors">Button Bezels (Elevator)</button>
+      <button data-tab="general" class="tab-btn border border-navy-900 font-semibold px-6 py-2.5 rounded-full text-sm transition-colors">Electronics & Industrial Components</button>
+    </div>
+
+    <!-- Tab panels -->
+    <div class="mt-12">
+
+      <!-- Panel: 자체 개발 제품 -->
+      <div class="tab-panel" data-panel="inhouse">
+        <div class="grid md:grid-cols-2 gap-12 items-center bg-gray-50 rounded-2xl p-8 lg:p-14">
+          <div class="product-carousel relative aspect-square rounded-xl overflow-hidden bg-[#8a8c8f] border border-gray-200">
+            <div class="carousel-track flex h-full transition-transform duration-500 ease-out">
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="inhouse-1.png" class="w-full h-full object-contain" alt="In-house product 1"></div>
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="inhouse-2.png" class="w-full h-full object-contain" alt="In-house product 2"></div>
+            </div>
+            <button type="button" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white hover:bg-gray-100 border border-gray-200 flex items-center justify-center shadow transition-colors" aria-label="Previous photo">
+              <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button type="button" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white hover:bg-gray-100 border border-gray-200 flex items-center justify-center shadow transition-colors" aria-label="Next photo">
+              <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+            <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-100 transition-opacity" aria-label="Go to photo 1"></button>
+            </div>
+          </div>
+          <div>
+            <span class="inline-block bg-navy-100 text-navy-800 text-sm font-bold px-3 py-1 rounded-full mb-4">Own Products</span>
+            <h3 class="text-2xl font-black text-navy-900">In-house Developed Products</h3>
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Products independently planned and developed based on zinc alloy (ZAMAK) die-casting technology.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-gray-700">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>Development of pre-mold massagers and spatulas usable as cosmetic package components</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>Custom production to the customer's desired design available</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: 화장품 장식품 -->
+      <div class="tab-panel hidden" data-panel="cosmetic">
+        <div class="grid md:grid-cols-2 gap-12 items-center bg-gray-50 rounded-2xl p-8 lg:p-14">
+          <div class="product-carousel relative aspect-square rounded-xl overflow-hidden bg-white border border-gray-200">
+            <div class="carousel-track flex h-full transition-transform duration-500 ease-out">
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="cosmetic-1.png" class="w-full h-full object-contain" alt="Cosmetic package decoration 1"></div>
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="cosmetic-2.png" class="w-full h-full object-contain" alt="Cosmetic package decoration 2"></div>
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="cosmetic-3.png" class="w-full h-full object-contain" alt="Cosmetic package decoration 3"></div>
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="cosmetic-4.png" class="w-full h-full object-contain" alt="Cosmetic package decoration 4"></div>
+              <div class="carousel-slide shrink-0 w-full h-full p-6"><img src="cosmetic-5.png" class="w-full h-full object-contain" alt="Cosmetic package decoration 5"></div>
+            </div>
+            <button type="button" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white hover:bg-gray-100 border border-gray-200 flex items-center justify-center shadow transition-colors" aria-label="Previous photo">
+              <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button type="button" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white hover:bg-gray-100 border border-gray-200 flex items-center justify-center shadow transition-colors" aria-label="Next photo">
+              <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+            </button>
+            <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-100 transition-opacity" aria-label="Go to photo 1"></button>
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-30 transition-opacity" aria-label="Go to photo 2"></button>
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-30 transition-opacity" aria-label="Go to photo 3"></button>
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-30 transition-opacity" aria-label="Go to photo 4"></button>
+              <button type="button" class="carousel-dot w-2 h-2 rounded-full bg-navy-900 opacity-30 transition-opacity" aria-label="Go to photo 5"></button>
+            </div>
+          </div>
+          <div>
+            <span class="inline-block bg-navy-100 text-navy-800 text-sm font-bold px-3 py-1 rounded-full mb-4">Cosmetic Package</span>
+            <h3 class="text-2xl font-black text-navy-900">Cosmetic Package Decorations</h3>
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              With refined detail and a sleek metal texture, we elevate the quality of premium cosmetics<br>
+              and deliver a differentiated product experience.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-gray-700">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>Key customers: LG Household & Health Care, Tolly Korea, etc.</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>From package accessories to small products</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>Luxurious design realization</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>Fine forms and a stable, substantial weight</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>Plating finish creates a variety of colors and textures</li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: 엘리베이터 버튼 -->
+      <div class="tab-panel hidden" data-panel="elevator">
+        <div class="grid md:grid-cols-2 gap-12 items-center bg-gray-50 rounded-2xl p-8 lg:p-14">
+          <div class="aspect-square rounded-xl bg-gradient-to-br from-navy-800 to-navy-950 flex items-center justify-center">
+            <svg class="w-28 h-28 text-blue-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+              <rect x="6" y="4" width="12" height="16" rx="2"/>
+              <circle cx="12" cy="9" r="1.6" fill="currentColor" stroke="none"/>
+              <circle cx="12" cy="14" r="1.6" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div>
+            <span class="inline-block bg-navy-100 text-navy-800 text-sm font-bold px-3 py-1 rounded-full mb-4">Metal Bezel for Button</span>
+            <h3 class="text-2xl font-black text-navy-900">Button Bezels (Elevator)</h3>
+            <p class="text-gray-600 mt-4 leading-relaxed">
+             Metal bezels add stable assembly and a refined finish to elevator buttons.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-gray-700">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>Key customers: ELS (OTIS), etc.</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>Shapes and precise dimensions to customer specifications</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>A variety of colors and metallic textures</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: 일반 부품 -->
+      <div class="tab-panel hidden" data-panel="general">
+        <div class="grid md:grid-cols-2 gap-12 items-center bg-gray-50 rounded-2xl p-8 lg:p-14">
+          <div class="aspect-square rounded-xl bg-gradient-to-br from-navy-800 to-navy-950 flex items-center justify-center">
+            <svg class="w-28 h-28 text-blue-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 7h10v10H7V7z"/>
+            </svg>
+          </div>
+          <div>
+            <span class="inline-block bg-navy-100 text-navy-800 text-sm font-bold px-3 py-1 rounded-full mb-4">Precision Components</span>
+            <h3 class="text-2xl font-black text-navy-900">Electronics & Industrial Components</h3>
+            <p class="text-gray-600 mt-4 leading-relaxed">
+              Based on precise dimensional control and stable quality, we manufacture everything from electronics such as door locks to metal parts for various industries, to customer specifications.
+            </p>
+            <ul class="mt-6 space-y-3 text-sm text-gray-700">
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>Key customers: Soliti, Commax, Samwoo Electronic Precision, etc.</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>Precise and stable quality that meets the customer's required dimensions</li>
+              <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full"></span>A wide range of parts such as shafts, bushings, cable covers, and musical instrument components</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FACILITIES (TIMELINE) ===== -->
+<section id="facilities" class="py-24 lg:py-32 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10">
+    <div class="text-center fade-up">
+      <span class="text-navy-700 font-bold text-sm tracking-widest">OUR FACILITIES</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mt-3">Key Equipment</h2>
+      <p class="text-gray-500 mt-4">Introducing the die-casting equipment that supports precise and stable production.</p>
+    </div>
+
+    <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- 설비 1 -->
+      <div class="fade-up bg-white border border-gray-200 shadow-sm rounded-xl p-8">
+        <div class="w-11 h-11 rounded-lg bg-navy-900 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <h3 class="font-bold text-navy-900 text-lg">U2 PLUS (Die-Casting Machine)</h3>
+        <dl class="mt-4 space-y-2 text-sm text-gray-500">
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Spec</dt><dd>5 TON</dd></div>
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Qty</dt><dd>8 units</dd></div>
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Maker</dt><dd>Hishinuma Machinery</dd></div>
+        </dl>
+      </div>
+
+      <!-- 설비 2 -->
+      <div class="fade-up bg-white border border-gray-200 shadow-sm rounded-xl p-8">
+        <div class="w-11 h-11 rounded-lg bg-navy-900 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <h3 class="font-bold text-navy-900 text-lg">CX-15T (Die-Casting Machine)</h3>
+        <dl class="mt-4 space-y-2 text-sm text-gray-500">
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Spec</dt><dd>15 TON</dd></div>
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Qty</dt><dd>2 units</dd></div>
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Maker</dt><dd>Hishinuma Machinery</dd></div>
+        </dl>
+      </div>
+
+      <!-- 설비 3 -->
+      <div class="fade-up bg-white border border-gray-200 shadow-sm rounded-xl p-8">
+        <div class="w-11 h-11 rounded-lg bg-navy-900 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <h3 class="font-bold text-navy-900 text-lg">CX-25T (Die-Casting Machine)</h3>
+        <dl class="mt-4 space-y-2 text-sm text-gray-500">
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Spec</dt><dd>25TON</dd></div>
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Qty</dt><dd>3 units</dd></div>
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Maker</dt><dd>Hishinuma, Shinyoung Industrial</dd></div>
+        </dl>
+      </div>
+
+      <!-- 설비 4 -->
+      <div class="fade-up bg-white border border-gray-200 shadow-sm rounded-xl p-8">
+        <div class="w-11 h-11 rounded-lg bg-navy-900 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <h3 class="font-bold text-navy-900 text-lg">60T Die-Casting Machine</h3>
+        <dl class="mt-4 space-y-2 text-sm text-gray-500">
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Spec</dt><dd>60 TON</dd></div>
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Qty</dt><dd>1 unit</dd></div>
+          <div class="flex gap-2"><dt class="w-14 shrink-0 text-gray-400">Maker</dt><dd>Hishinuma Machinery</dd></div>
+        </dl>
+      </div>
+
+      <!-- 설비 5: 기타 설비 현황 (1x2, 오른쪽 길게 배치) -->
+      <div class="fade-up bg-white border border-gray-200 shadow-sm rounded-xl p-8 flex flex-col sm:col-span-2 lg:col-span-1 lg:col-start-3 lg:row-start-1 lg:row-span-2">
+        <div class="w-11 h-11 rounded-lg bg-navy-900 flex items-center justify-center mb-5">
+          <svg class="w-5 h-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"/></svg>
+        </div>
+        <h3 class="font-bold text-navy-900 text-lg">Other Equipment</h3>
+        <p class="text-sm text-gray-400 mt-1">Auxiliary equipment that supports production.</p>
+        <ul class="mt-6 space-y-4 text-sm text-gray-600 flex-1">
+          <li class="flex items-center justify-between gap-1.5 pb-4 border-b border-gray-100">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full shrink-0"></span>EDM (Electrical Discharge) Machine</span>
+            <span class="text-gray-400 shrink-0">CHARMILLES</span>
+          </li>
+          <li class="flex items-center justify-between gap-1.5 pb-4 border-b border-gray-100">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full shrink-0"></span>Surface Grinder</span>
+            <span class="text-gray-400 shrink-0">Samsung Precision Machinery</span>
+          </li>
+          <li class="flex items-center justify-between gap-2 pb-4 border-b border-gray-100">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full shrink-0"></span>Milling Machine</span>
+            <span class="text-gray-400 shrink-0">Samsung Precision Machinery</span>
+          </li>
+          <li class="flex items-center justify-between gap-2 pb-4 border-b border-gray-100">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full shrink-0"></span>Drilling Machine</span>
+            <span class="text-gray-400 shrink-0">Samsung Precision Machinery</span>
+          </li>
+          <li class="flex items-center justify-between gap-2 pb-4 border-b border-gray-100">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full shrink-0"></span>Shot Blasting Machine</span>
+            <span class="text-gray-400 shrink-0">Seoul ST</span>
+          </li>
+          <li class="flex items-center justify-between gap-2 pb-4 border-b border-gray-100">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full shrink-0"></span>Salt Spray Tester</span>
+            <span class="text-gray-400 shrink-0">Green Science</span>
+          </li>
+          </li>
+          <li class="flex items-center justify-between gap-2">
+            <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-navy-700 rounded-full shrink-0"></span>Laser Marking Machine</span>
+            <span class="text-gray-400 shrink-0">Tau Laser</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="py-24 lg:py-32 bg-navy-950 relative overflow-hidden">
+  <div class="absolute -bottom-40 -left-40 w-[400px] h-[400px] bg-navy-700/30 rounded-full blur-3xl"></div>
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center fade-up">
+      <span class="text-blue-300 font-bold text-sm tracking-widest">CONTACT US</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-white mt-3">Product Inquiries</h2>
+      <p class="text-gray-400 mt-4">For product and quotation inquiries, please contact us by email or phone.</p>
+    </div>
+
+    <div class="mt-16 grid lg:grid-cols-5 gap-10">
+
+      <!-- Company info -->
+      <div class="fade-up lg:col-span-2 space-y-6">
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 flex gap-4">
+          <div class="shrink-0 w-11 h-11 rounded-lg bg-navy-800 flex items-center justify-center">
+            <svg class="w-5 h-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-white font-bold">Address</h3>
+            <p class="text-gray-400 text-sm mt-1">Daewon Precision, 44 Gamjeong-ro 33beon-gil, Gimpo-si, Gyeonggi-do, Korea</p>
+          </div>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 flex gap-4">
+          <div class="shrink-0 w-11 h-11 rounded-lg bg-navy-800 flex items-center justify-center">
+            <svg class="w-5 h-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-white font-bold">Phone · FAX</h3>
+            <p class="text-gray-400 text-sm mt-1">031-983-6767 · 031-983-6769</p>
+          </div>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 flex gap-4">
+          <div class="shrink-0 w-11 h-11 rounded-lg bg-navy-800 flex items-center justify-center">
+            <svg class="w-5 h-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-white font-bold">Email</h3>
+            <p class="text-gray-400 text-sm mt-1">chooms67@hanmail.net</p>
+          </div>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-6 flex gap-4">
+          <div class="shrink-0 w-11 h-11 rounded-lg bg-navy-800 flex items-center justify-center">
+            <svg class="w-5 h-5 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-white font-bold">Business Hours</h3>
+            <p class="text-gray-400 text-sm mt-1">Weekdays 09:00 – 17:00 (Closed on weekends and public holidays)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="fade-up lg:col-span-3 rounded-2xl overflow-hidden shadow-2xl h-[420px] lg:h-full min-h-[420px]">
+        <iframe
+          src="https://www.google.com/maps?q=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EA%B9%80%ED%8F%AC%EC%8B%9C%20%EA%B0%90%EC%A0%95%EB%A1%9C33%EB%B2%88%EA%B8%B8%2044&output=embed"
+          class="w-full h-full block"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-navy-900 border-t border-navy-800 py-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-2">
+      <div class="items-center justify-center">
+         <img src="dw.png" style="width: 35px; height: auto;">
+      </div>
+             <span class="text-xl font-bold text-gray-400 tracking-tight"><span class="text-gray-400 font-light">Daewon Precision</span></span>
+    </div>
+    <p class="text-gray-400 text-xs text-center">&copy; 2026 DAEWON PRECISION Co., Ltd. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+  });
+
+  // Product tabs
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const panels = document.querySelectorAll('.tab-panel');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const target = btn.dataset.tab;
+      panels.forEach(p => {
+        p.classList.toggle('hidden', p.dataset.panel !== target);
+      });
+    });
+  });
+
+  // Scroll reveal animation
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Product image carousels
+  document.querySelectorAll('.product-carousel').forEach((carousel) => {
+    const track = carousel.querySelector('.carousel-track');
+    const slides = carousel.querySelectorAll('.carousel-slide');
+    const dots = carousel.querySelectorAll('.carousel-dot');
+    const total = slides.length;
+    let index = 0;
+
+    function update() {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('opacity-100', i === index);
+        dot.classList.toggle('opacity-30', i !== index);
+      });
+    }
+
+    carousel.querySelector('.carousel-prev').addEventListener('click', () => {
+      index = (index - 1 + total) % total;
+      update();
+    });
+    carousel.querySelector('.carousel-next').addEventListener('click', () => {
+      index = (index + 1) % total;
+      update();
+    });
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        index = i;
+        update();
+      });
+    });
+
+    // Touch swipe support (mobile)
+    let startX = 0;
+    carousel.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+    carousel.addEventListener('touchend', (e) => {
+      const diff = e.changedTouches[0].clientX - startX;
+      if (diff > 40) {
+        index = (index - 1 + total) % total;
+        update();
+      } else if (diff < -40) {
+        index = (index + 1) % total;
+        update();
+      }
+    });
+
+    update();
+  });
+
+  // Contact form validation
+  const form = document.getElementById('contactForm');
+  const successMsg = document.getElementById('formSuccess');
+
+  function validateField(id, testFn) {
+    const field = document.getElementById(id);
+    const errorMsg = field.parentElement.querySelector('.error-msg');
+    const valid = testFn(field.value.trim());
+    if (!valid) {
+      field.classList.add('border-red-500');
+      errorMsg.classList.remove('hidden');
+    } else {
+      field.classList.remove('border-red-500');
+      errorMsg.classList.add('hidden');
+    }
+    return valid;
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    successMsg.classList.add('hidden');
+
+    const nameValid = validateField('name', v => v.length > 0);
+    const emailValid = validateField('email', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+    const messageValid = validateField('message', v => v.length > 0);
+
+    if (nameValid && emailValid && messageValid) {
+      successMsg.classList.remove('hidden');
+      form.reset();
+      setTimeout(() => successMsg.classList.add('hidden'), 5000);
+    }
+  });
+</script>
+
+</body>
+</html>
